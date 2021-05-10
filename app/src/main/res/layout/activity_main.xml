@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="354dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="50dp"
+        android:text="Here..!! \nFind the secret number.."
+        android:textAlignment="center"
+        android:textColor="@color/darkyellow"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/enterbttn"
+        android:layout_width="112dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="50dp"
+        android:text="Enter"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="398dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="💡HINT:\t Secret number is in between 1 and 10"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/playagainbttn"
+        android:layout_width="215dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_bttn"
+        android:text="Play Again"
+        android:textSize="30dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/enterbttn"
+        app:layout_constraintStart_toStartOf="@+id/enterbttn"
+        app:layout_constraintTop_toBottomOf="@+id/enterbttn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
