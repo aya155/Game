@@ -24,7 +24,10 @@ class MainActivity : AppCompatActivity() {
         rand = (1..10).random()
         enterbttn.setOnClickListener {
             val x = number.text.toString().toIntOrNull() ?: 0
-            if (x !in 1..10) showAlert("Number must be 1 and 10")
+            if (x !in 1..10) {
+                showAlert("Number must be 1 and 10")
+                return@setOnClickListener
+            }
             if (tryCount > 1)
             {
                 tryCount -= 1
@@ -35,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 else
                 {
-                    showAlert("try Again You have ${tryCount - 1} more chance")
+                    showAlert("try Again You have $tryCount more chance")
                 }
             }
             else
