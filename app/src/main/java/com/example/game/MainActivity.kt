@@ -14,6 +14,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+
+    
     var rand : Int = 0
     var tryCount = 3
     override fun onCreate(savedInstanceState: Bundle?) {
